@@ -1,0 +1,196 @@
+html body {
+  font-family: 'Lato', sans-serif;
+}
+
+.container {
+  display: grid;
+  margin: auto;
+  width: 100%;
+  padding-bottom: 15px;
+  /* height: 100%; */
+  box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);
+}
+
+.sidebar {
+  padding-left: 15px;
+  padding-right: 15px;
+  min-height: 100%;
+  text-align: center;
+  color: #333;
+  background-color: #F7F7F7;
+  position: relative;
+}
+
+.header {
+  background-color: #00bcd4;
+  box-shadow: 0 0 0 rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);
+  position: absolute;
+  width: 100%;
+  left: 0;
+  right: 0;
+}
+
+.content {
+  padding-left: 15px;
+  padding-right: 15px;
+  min-height: 100%;
+  background-color: #fff;
+}
+
+.img-logo {
+  display: block;
+  margin: 100px auto 30px auto;
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+}
+
+.img-btn {
+  display: block;
+  margin: 30px auto 15px auto;
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+}
+
+.sidebar-title {
+  color: #fff;
+  font-weight: lighter;
+  text-align: center;
+}
+
+.sidebar-text {
+  font-weight: lighter;
+}
+
+.content-title {
+  margin: 15px;
+  color: #333;
+  text-align: center;
+  font-weight: lighter;
+}
+
+.btn-title {
+  color: #333;
+  text-align: center;
+  font-weight: lighter;
+}
+
+.btn-link {
+  text-decoration: none;
+}
+
+.btn-1 {
+  height: 200px;
+  background-color: #F7F7F7;
+  margin: 15px;
+  padding-top: 1px;
+  box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);
+  cursor: pointer;
+}
+
+.btn-2 {
+  height: 200px;
+  background-color: #F7F7F7;
+  margin: 15px;
+  padding-top: 1px;
+  box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);
+  cursor: pointer;
+}
+
+.btn-3 {
+  height: 200px;
+  background-color: #F7F7F7;
+  margin: 15px;
+  padding-top: 1px;
+  box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);
+  cursor: pointer;
+}
+
+.btn-4 {
+  height: 200px;
+  background-color: #F7F7F7;
+  margin: 15px;
+  padding-top: 1px;
+  box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);
+  cursor: pointer;
+}
+
+/* CALCULATOR Styles */
+.main-calc {
+  text-align: center;
+}
+
+.input-number {
+  height: 35px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.btn-sum {
+  height: 35px;
+  font-size: 20px;
+  width: 100px;
+  background-color: #00bcd4;
+  border-color: #00bcd4;
+  box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);
+}
+
+/* MAPS Styles */
+#map {
+  width: 100%;
+  height: 400px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.img-popup {
+  width : 250px;
+}
+
+
+/* RESPONSIVE Styles */
+@media only screen and (max-width: 500px) {
+  .container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .sidebar {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    height: 400px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .container {
+    grid-template-columns: repeat(3, 1fr);
+    /* box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important */
+  }
+
+  .sidebar {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    height: 400px;
+  }
+
+  .content {
+    grid-column-start: 2;
+    grid-column-end: 4;
+  }
+
+  .btn-main {
+    display: grid;
+    grid-template-areas: 
+      "btn-1 btn-2"
+      "btn-3 btn-4"
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .container {
+    width: 75%
+  }
+}
